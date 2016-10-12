@@ -1,0 +1,214 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.3cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.3cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.2cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.3cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Gary}{Gunn}
+      {Computer Engineer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=1.0]{img/Gary_Circle.jpg}
+  \section{Address}
+    Clontarf,
+    Dublin
+    ~
+  \section{Tel}
+    +353877408766
+    ~
+  \section{Mail}
+    \href{mailto:ggunn@tcd.ie}{\textbf{ggunn@}\\tcd.ie}
+    ~
+  \section{Web}
+    \href{https://ie.linkedin.com/in/gunngary}{LinkedIn}
+    ~
+  % use  \hspace{} or \vspace{} to change bubble size, if needed
+  \section{Programming}
+    \smartdiagram[bubble diagram]{
+        \textbf{Machine}\\\textbf{Learning}\vspace{3mm},
+        \textbf{C/C++},
+        \textbf{Python},
+        \textbf{Java},
+        \textbf{HTML/CSS},
+        \textbf{Computer}\\\textbf{Vision},
+        \textbf{Neural}\\\textbf{Networks},
+        \textbf{R}
+    }
+    ~
+  \section{Personal Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Problem}\\\textbf{Solving},
+        \textbf{Initiative},
+        \textbf{Curiosity},
+        \textbf{Team}\\\textbf{Player},
+        \textbf{Leadership},
+        \textbf{Organise}
+      
+    }
+    ~
+\end{aside}
+~
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {01/16 - 08/16}
+    {Data Science Intern}
+    {SAP Business Objects}
+    {During my time at SAP, my work was focused on researching new machine learning algorithms and implementing them as R scripts into the product, Predictive Analytics. My work at SAP also included creating interesting and creative use cases for the product including the use of computer vision and interesting data sets I discovered.\\}
+  \entry
+    {06/15 - 10/15}
+    {Computer Engineering Intern}
+    {Pointy}
+    {I spent the summer building both front and back-end systems for Pointy and in doing so learned python, javascript, css and html as well as designing firmware for hardware devices in C++.\\}
+    \entry
+    {02/15 - 02/16}
+    {Bar Staff}
+    {Connolly's The Sheds}
+    {Duties include Cash Handling, Beverage Serving, Serving Customers and other general bar tasks.\\}
+\end{entrylist}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2016 - Now}
+    {Master's Degree in Computer Engineering}
+    {Trinity College Dublin}
+    {Topics covered during this year include Artificial Intelligence, Fuzzy Logic, Distributed Systems, Formal Verification, Network, Information Architecture as well as a dissertation investigating whether Neural Networks can be used to solve the cocktail party problem.\\}
+  \entry
+    {2012 - 2016}
+    {Bachelor's Degree in Computer Engineering}
+    {Trinity College Dublin}
+    {First two years spent in general engineering where all areas were covered (Civil, Mechanical etc) Final two years spent in pure computer engineering. Topics relating to computer engineering included computer vision, computer graphics, networks, mobile comunications and many more.\\}
+  \entry
+    {2006 - 2012}
+    {Irish Leaving Certificate}
+    {Catholic University School}
+    {Completed eight leaving certificate subjects including English, Irish, Maths, Physics, Applied Maths, Biology, Music, French.}
+\end{entrylist}
+
+\section{Results}
+\begin{entrylist}
+  \entry
+    {09/2016}
+    {1.1 Honours}
+    {Exam Results}
+    {4th Year Computer Engineering}
+  \entry
+    {07/2015}
+    {1.1 Honours}
+    {Exam Results}
+    {3rd Year Computer Engineering}
+  \entry
+    {07/2014}
+    {2.1 Honours}
+    {Exam Results}
+    {2nd Year Computer Engineering}
+  \entry
+    {07/2013}
+    {1.1 Honours}
+    {Exam Results}
+    {1st Year Computer Engineering}
+
+\end{entrylist}
+
+\newpage
+
+\begin{aside}
+~
+~
+~
+  \section{Languages}
+    \textbf{English}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{French}\includegraphics[scale=0.40]{img/2stars.png}
+    ~
+\end{aside}
+
+
+\section{References}
+\begin{entrylist}
+  \entry
+    {Paul Pallath}
+    {Chief Data Scientist}
+    {SAP Business Objects}
+    {\href{paul.pallath@sap.com}{paul.pallath@sap.com}}
+  \entry
+    {Mark Cummins}
+    {Co-founder, Pointy.com}
+    {Pointy}
+    {\href{mark@pointy.com}{mark@pointy.com}}
+  \entry
+    {Charles Bibby}
+    {Co-founder, Pointy.com}
+    {Pointy}
+    {\href{charles@pointy.com}{charles@pointy.com}}
+  \entry
+    {Peter Connolly}
+    {Owner of Connolly's The Sheds}
+    {Connolly's The Sheds}
+    {+0035318338691}
+    
+    
+\end{entrylist}
+
+
+\begin{flushleft}
+\emph{October 12th, 2016}
+\end{flushleft}
+\begin{flushright}
+\emph{Gary Gunn}
+\end{flushright}
+
+\end{document}
