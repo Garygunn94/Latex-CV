@@ -35,7 +35,7 @@
     % specifies which is the distance among the bubble center node and the other bubbles
     distance center/other bubbles = 0.2cm,
     % sets the distance from the text to the border of the bubble center node
-    distance text center bubble = 0.3cm,
+    distance text center bubble = 0.5cm,
     % set center bubble color
     bubble center node color = pblue,
     % define the list of colors usable in the diagram
@@ -51,8 +51,8 @@
 \definecolor{pblue}{HTML}{0395DE}
 
 \begin{document}
-\header{Gary}{Gunn}
-      {Computer Engineer}
+\header{Alicia}{Wallace}
+      {Children's Nurse}
       
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -61,154 +61,172 @@
 
 % In the aside, each new line forces a line break
 \begin{aside}
-  \includegraphics[scale=1.0]{img/Gary_Circle.jpg}
+  \includegraphics[scale=.4]{img/Alicia.png}
   \section{Address}
+    13 Vernon Gardens,
     Clontarf,
     Dublin
     ~
+
   \section{Tel}
-    +353877408766
+    +353860313231
     ~
+
   \section{Mail}
-    \href{mailto:ggunn@tcd.ie}{\textbf{ggunn@}\\tcd.ie}
+    \href{mailto:alicia.wallace22@mail.dcu.ie}{\textbf{alicia.wallace@}\\mail.dcu.ie}
     ~
-  \section{Web}
-    \href{https://ie.linkedin.com/in/gunngary}{LinkedIn}
-    ~
+
   % use  \hspace{} or \vspace{} to change bubble size, if needed
-  \section{Programming}
-    \smartdiagram[bubble diagram]{
-        \textbf{Machine}\\\textbf{Learning}\vspace{3mm},
-        \textbf{C/C++},
-        \textbf{Python},
-        \textbf{Java},
-        \textbf{HTML/CSS},
-        \textbf{Computer}\\\textbf{Vision},
-        \textbf{Neural}\\\textbf{Networks},
-        \textbf{R}
-    }
-    ~
-  \section{Personal Skills}
-    \smartdiagram[bubble diagram]{
-        \textbf{Problem}\\\textbf{Solving},
-        \textbf{Initiative},
-        \textbf{Curiosity},
-        \textbf{Team}\\\textbf{Player},
-        \textbf{Leadership},
-        \textbf{Organise}
-      
-    }
-    ~
+  %\section{Programming}
+    %\smartdiagram[bubble diagram]{
+       % \textbf{Machine}\\\textbf{Learning}\vspace{3mm},
+        %\textbf{C/C++},
+        %\textbf{Python},
+        %\textbf{Java},
+        %\textbf{HTML/CSS},
+        %\textbf{Computer}\\\textbf{Vision},
+        %\textbf{Neural}\\\textbf{Networks},
+        %\textbf{R}
+    %}
+    %~
+
 \end{aside}
 ~
 \section{Experience}
 \begin{entrylist}
   \entry
-    {01/16 - 08/16}
-    {Data Science Intern}
-    {SAP Business Objects}
-    {During my time at SAP, my work was focused on researching new machine learning algorithms and implementing them as R scripts into the product, Predictive Analytics. My work at SAP also included creating interesting and creative use cases for the product including the use of computer vision and interesting data sets I discovered.\\}
+    {08/16 - 10/16}
+    {Intern Nurse - Day Ward}
+    {Temple Street}
+    {-Pre and post-operative care of children undergoing day surgeries\\
+-Management of medical patients admitted for IV infusions and thyroid scans\\
+-Supervision and education of supernumary students\\
+-Collaboration with the multidisciplinary team\\ 
+\\}
   \entry
-    {06/15 - 10/15}
-    {Computer Engineering Intern}
-    {Pointy}
-    {I spent the summer building both front and back-end systems for Pointy and in doing so learned python, javascript, css and html as well as designing firmware for hardware devices in C++.\\}
+    {06/16 - 06/16}
+    {Intern Nurse - Banks Ward}
+    {Beaumount Hospital}
+    {-Provision of care to patients undergoing orthopaedic and/or plastic surgery\\
+-Attending to Complex wound dressings including PICO and VAC therapy\\
+-Collaboration with the multi-disciplinary team both within the hospital and with public health nurses
+.\\}
+  \entry
+    {04/16 - 06/16}
+    {Intern Nurse - Corrigan Ward}
+    {Beaumount Hospital}
+    {-Provision of evidence based care to patients admitted to the cardiac care ward\\
+-Pre and post operative care of patients undergoing coronary angiogram\\
+-Administration of medications and monitoring of patient response
+.\\}
+ \entry
+    {06/15 - 08/15}
+    {Healthcare Assistant}
+    {CPL Healthcare}
+    {-Attending to the basic hygiene and nutritional needs of patients\\
+-Restocking of ward supplies.\\} 
     \entry
-    {02/15 - 02/16}
+    {2012 - 2016}
     {Bar Staff}
     {Connolly's The Sheds}
-    {Duties include Cash Handling, Beverage Serving, Serving Customers and other general bar tasks.\\}
+    {-Taking customers orders and providing table service.\\
+-Maintaining a cleanly environment.\\
+-Working behind the bar serving drinks
+.\\}
 \end{entrylist}
 
 \section{Education}
 \begin{entrylist}
   \entry
-    {2016 - Now}
-    {Master's Degree in Computer Engineering}
-    {Trinity College Dublin}
-    {Topics covered during this year include Artificial Intelligence, Fuzzy Logic, Distributed Systems, Formal Verification, Network, Information Architecture as well as a dissertation investigating whether Neural Networks can be used to solve the cocktail party problem.\\}
-  \entry
     {2012 - 2016}
-    {Bachelor's Degree in Computer Engineering}
-    {Trinity College Dublin}
-    {First two years spent in general engineering where all areas were covered (Civil, Mechanical etc) Final two years spent in pure computer engineering. Topics relating to computer engineering included computer vision, computer graphics, networks, mobile comunications and many more.\\}
+    {BSc. in Children’s and General Nursing Integrated}
+    {Dublin City University}
+    {Experted Grade: 1.1\\
+Achieved a first class honours for my third year literature review carried out to examine whether maternal use of Selective Serotonin Reuptake inhibiters during pregnancy result in foetal growth restriction and low birth weight.\\
+Obtained a first class honours for my Final year literature review which looked to collaborate research on whether the use of sterile saline is more effective than the use of potable tap water in preventing wound infection.
+\\}
   \entry
     {2006 - 2012}
     {Irish Leaving Certificate}
-    {Catholic University School}
-    {Completed eight leaving certificate subjects including English, Irish, Maths, Physics, Applied Maths, Biology, Music, French.}
-\end{entrylist}
-
-\section{Results}
-\begin{entrylist}
-  \entry
-    {09/2016}
-    {1.1 Honours}
-    {Exam Results}
-    {4th Year Computer Engineering}
-  \entry
-    {07/2015}
-    {1.1 Honours}
-    {Exam Results}
-    {3rd Year Computer Engineering}
-  \entry
-    {07/2014}
-    {2.1 Honours}
-    {Exam Results}
-    {2nd Year Computer Engineering}
-  \entry
-    {07/2013}
-    {1.1 Honours}
-    {Exam Results}
-    {1st Year Computer Engineering}
-
+    {Holy Faith  Convent, Clontarf}
+    {Attained 535 CAO points. A1 Higher Level Biology.}
 \end{entrylist}
 
 \newpage
 
+\section{Additional/Voluntary Work}
+\begin{entrylist}
+  \entry
+    {Dec 2015}
+    {Fundraising for Animal Heaven, Animal Rescue}
+    {National Botanical Gardens}
+    {I organised and ran a stall at the Christmas Market in the National Botanical Gardens. Baked goods were sold with 100\%\ of the profits donated to Animal Heaven Animal Rescue.\\}
+  \entry
+    {05/15 - 08/15}
+    {Lactation Team}
+    {Holles Street}
+    {-Assisted weekly with breastfeeding clinics with duties including obtaining infant weights, supporting mothers and providing parental education. \\
+ -Enhanced my own knowledge of breastfeeding and common neonatal issues which can
+hinder feeding.\\
+}
+\end{entrylist}
+
+\section{Achievements \&\ Interests}
+\begin{entrylist}
+  \entry
+    {Sep 2016}
+    {Personal Compliment}
+    {Temple Street}
+    {Received a personalised compliment via the Temple Street Foundations social media site and intranet regarding the care I provided to a child admitted to the day ward.\\}
+  \entry
+    {09/15 - 05/16}
+    {Final Year Class Rep}
+    {Dublin CIty University}
+    {Attended meetings within the Irish Nurses and Midwives Organisation regarding
+internship pay. I was then responsible for reporting any information back to the class
+and answering any questions regarding progress.
+\\}
+  \entry
+    {09/11 - 06/11}
+    {Prefect}
+    {Holy Faith Convent, Clontarf}
+    {Was responsible for guiding a class group of 26 third year students for the school year.
+Spent 30 minutes in their classroom each day during lunch to assist with any problems.
+In coordination with 7 other class prefects I organised a sports day for all 98 third
+year students.\\}
+\end{entrylist}
+
+
+
+
+
 \begin{aside}
-~
-~
-~
+
   \section{Languages}
     \textbf{English}\includegraphics[scale=0.40]{img/5stars.png}
-    \textbf{French}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{French}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{German}\includegraphics[scale=0.40]{img/3stars.png}
+    ~
+ 
+ \section{Professional Skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Communication},
+        \textbf{Determined},
+        \textbf{Team}\\\textbf{Player},
+        \textbf{Leadership},
+        \textbf{Organised},
+	  \textbf{Motivated}
+      
+    }
     ~
 \end{aside}
 
 
-\section{References}
-\begin{entrylist}
-  \entry
-    {Paul Pallath}
-    {Chief Data Scientist}
-    {SAP Business Objects}
-    {\href{mailto:paul.pallath@sap.com}{paul.pallath@sap.com}}
-  \entry
-    {Mark Cummins}
-    {Co-founder, Pointy.com}
-    {Pointy}
-    {\href{mailto:mark@pointy.com}{mark@pointy.com}}
-  \entry
-    {Charles Bibby}
-    {Co-founder, Pointy.com}
-    {Pointy}
-    {\href{mailto:charles@pointy.com}{charles@pointy.com}}
-  \entry
-    {Peter Connolly}
-    {Owner of Connolly's The Sheds}
-    {Connolly's The Sheds}
-    {+0035318338691}
-    
-    
-\end{entrylist}
-
-
 \begin{flushleft}
-\emph{October 12th, 2016}
+\emph{October 17th, 2016}
 \end{flushleft}
 \begin{flushright}
-\emph{Gary Gunn}
+\emph{Alicia Wallace}
 \end{flushright}
 
 \end{document}
